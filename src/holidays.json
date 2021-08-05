@@ -1,0 +1,46 @@
+[
+  {
+    "name": "New Year",
+    "date": "01 January 2021"
+  },
+  {
+    "name": "Epiphany",
+    "date": "06 January 2021"
+  },
+  {
+    "name": "Easter",
+    "date": "04 April 2021"
+  },
+  {
+    "name": "Easter Monday",
+    "date": "05 April 2021"
+  },
+  {
+    "name": "Liberation Day",
+    "date": "25 April 2021"
+  },
+  {
+    "name": "Republic Day",
+    "date": "02 June 2021"
+  },
+  {
+    "name": "Assumption Day",
+    "date": "15 August 2021"
+  },
+  {
+    "name": "All Saints' Day",
+    "date": "01 November 2021"
+  },
+  {
+    "name": "Solemnity of the Immaculate Conception",
+    "date": "08 December 2021"
+  },
+  {
+    "name": "Christmas",
+    "date": "25 December 2021"
+  },
+  {
+    "name": "Boxing DAy",
+    "date": "January 01"
+  }
+]

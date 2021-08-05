@@ -1,14 +1,16 @@
 $purple-dark: #10007f;
+$grey: #575757;
 
 .card {
   margin-right: 10px;
   overflow: hidden;
-  
+
   .card-text {
     font-size: 13px;
   }
 
-  p, h5 {
+  p,
+  h5 {
     color: $purple-dark;
   }
 
@@ -16,6 +18,22 @@ $purple-dark: #10007f;
     margin-right: 4px;
     position: relative;
     left: 50px;
+  }
+}
+
+.selectable {
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.not_selectable {
+  p,
+  h5 {
+    color: $grey;
+  }
+  img {
+    opacity: 0.7;
   }
 }
 

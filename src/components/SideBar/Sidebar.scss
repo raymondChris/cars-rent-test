@@ -1,0 +1,80 @@
+$purple-dark: #10007f;
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -200px;
+  min-height: 100vh !important;
+  min-width: 200px;
+  z-index: 100;
+  padding: 48px 0 0;
+  background-color: white;
+  box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .sidebar-menu {
+    margin-top: 20px;
+    div {
+      padding: 8px 10px;
+      text-align: center;
+      color: $purple-dark;
+    }
+
+    div:last-child {
+      margin-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: $purple-dark;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.sidebar-open {
+  right: 0px;
+  animation-name: opening;
+  animation-duration: 0.5s;
+}
+
+@keyframes opening {
+  from {
+    right: -200px;
+  }
+  90% {
+    right: 0px;
+  }
+  95% {
+    right: 2px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.sidebar-close {
+  right: -200px;
+  animation-name: closing;
+  animation-duration: 1s;
+}
+
+@keyframes closing {
+  from {
+    right: 0px;
+  }
+  5% {
+    right: 2px;
+  }
+  to {
+    right: -200px;
+  }
+}

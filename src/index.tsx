@@ -2,11 +2,10 @@ import './index.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
-import App from './components/App';
+import { Home, Contact} from './components/Pages';
 import * as serviceWorker from './serviceWorker';
-import Contact from './components/App/Contact/Contact';
 
 // Disable AXE for production
 if (process.env.NODE_ENV !== "production") {
@@ -17,7 +16,7 @@ if (process.env.NODE_ENV !== "production") {
 const routing = (
   <Router>
     <div>
-      <Route exact path="/" component={App} />
+      <Route exact path="/" component={Home} />
       <Route path="/contact" component={Contact} />
     </div>
   </Router>
